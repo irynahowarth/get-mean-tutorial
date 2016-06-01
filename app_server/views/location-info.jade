@@ -1,0 +1,107 @@
+extends layout
+
+block content
+  #banner.row.page-header
+    .col-lg-12
+      h1 Costa Coffee
+  .row
+    .col-xs-12.col-md-9
+      .row
+        .col-xs-12.col-sm-6
+          p.rating
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star-empty
+          p.address 4 Fairfax Rd, Manchester M25 1AY
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title Opening hours
+            .panel-body
+              p Monday - Friday :  6:30am – 7:00pm
+              p Saturday : 7:30am – 6:00pm
+              p Sunday : 7:30am – 6:00pm
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title Facilities
+            .panel-body
+              span.label-label-warning
+                span.glyphicon.glyphicon-ok
+                | &nbsp;Hot drinks
+              | &nbsp;
+              span.label-label-warning
+                span.glyphicon.glyphicon-ok
+                | &nbsp;Iced coolers
+              | &nbsp;
+              span.label-label-warning
+                span.glyphicon.glyphicon-ok
+                | &nbsp;Snacks/sandwiches
+              | &nbsp;
+              span.label-label-warning
+                span.glyphicon.glyphicon-ok
+                | &nbsp;Free Wifi
+              | &nbsp;
+        .col-xs-12.col-md-6.location-map
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title Location map
+            .panel-body
+              img.img-responsive.img-rounded(src='http://maps.googleapis.com/maps/api/staticmap?autoscale=2&size=600x446&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:Costa%7C4+Fairfax+Rd,+Manchester+M25+1AY,+United+Kingdom" alt="Google Map of 4 Fairfax Rd, Manchester M25 1AY, United Kingdom"')
+      .row
+        .col-xs-12
+          .panel.panel-primary.review-panel
+            .panel-heading
+              a.btn.btn-default.pull-right(href='/location/review/new') Add review
+              h2.panel-title Customer reviews
+            .panel-body
+              .row
+                .review
+                  .well.well-sm.review-header
+                    span.rating
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      &nbsp;
+                    span.reviewAuthor Iryna Howarth &nbsp;
+                    small.reviewTimestamp 26 May 2016
+                  .col-xs-12
+                    p Always good coffee and cosy atmosphere.
+                .review
+                  .well.well-sm.review-header
+                    span.rating
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star-empty
+                      &nbsp;
+                    span.reviewAuthor Richard Peel &nbsp;
+                    small.reviewTimestamp 23 May 2016
+                  .col-xs-12
+                    p Good food, good drinks, but if it's too busy wifi is very slow.
+                .review
+                  .well.well-sm.review-header
+                    span.rating
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star-empty
+                      &nbsp;
+                    span.reviewAuthor Joe Doe &nbsp;
+                    small.reviewTimestamp 21 May 2016
+                  .col-xs-12
+                    p Sometimes too busy and have to wait to be served.
+    .col-xs-12.col-md-3
+      p.lead Costa Coffee is on Loc8r because it has free wifi and nice atmosphere to sit down and get cosy.
+      p If you've been and you like it - or has negative experience - please leave a review to help other people just like you.
+
+
+
+
+
+
+
