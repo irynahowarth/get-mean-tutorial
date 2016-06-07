@@ -11,3 +11,7 @@ The app could be seen live in [heroku](https://im-get-mean.herokuapp.com)
 * create Jade views using Twitter Bootstrap
 * add static data as part of pages prototyping
 * extract data from views to controllers in order to serve dynamicaly
+* create DB in MongoDB using shell and add some data
+* make a DB dump to connect with live DB
+* create DB in MongoLab and connect with Heroku app
+* push dump of local DB to heroku LiveDB
